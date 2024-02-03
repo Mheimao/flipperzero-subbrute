@@ -645,8 +645,8 @@ void subbrute_protocol_create_candidate_for_default(
             p[i] = (uint8_t)(total >> 8 * (7 - i)) & 0xFF;
         }
     } else if(file == PT2260FileProtocol) {
-        const uint8_t lut[] = {0x00, 0x01, 0x03}; // 00, 01, 11
-        const uint64_t button_open = 0x03; // 11
+        const uint8_t lut[] = {0x00, 0x01, 0x0C}; // 00, 01, 11
+        const uint64_t button_open = 0x0C; // 11
         //const uint8_t button_lock = 0x0C; // 1100
         //const uint8_t button_stop = 0x30; // 110000
         //const uint8_t button_close = 0xC0; // 11000000
